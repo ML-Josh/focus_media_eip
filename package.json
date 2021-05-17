@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "NodeJS Express的初始化框架。",
   "scripts": {
-    "dev": "node server",
+    "dev": "nodemon server",
     "stage": "cross-env NODE_ENV=production APP_ENV=stage node server",
     "apidoc": "apidoc -i ./server/app/ -o ./doc/"
   },
