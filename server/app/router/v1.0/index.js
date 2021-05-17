@@ -24,5 +24,6 @@ router.use('/api/v1.0/account', limiter);
 
 // 以下將其他router或controller接上
 router.use('/api/v1.0', require('./login'));
+router.use('/api/v1.0/upload', require('./upload'));
 
 module.exports = (app) => { app.use(router); };

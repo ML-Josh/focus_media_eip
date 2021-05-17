@@ -50,7 +50,8 @@
     "module-alias": "^2.1.0",
     "mongoose": "^5.10.5",
     "pug": "^3.0.0",
-    "validator": "^13.1.1"
+    "validator": "^13.1.1",
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "apidoc": "^0.25.0",
