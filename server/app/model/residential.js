@@ -21,6 +21,10 @@ const _schema = mongoose.Schema({
   'unit_type_count-': String,
   'unit_type_count+': String,
   ad_restriction: [String],
+  location: Object,
+  location_type: String,
+  formatted_address: String,
+  geoCoded: Boolean,
 });
 
 module.exports = mongoose.model('Residential', _schema);

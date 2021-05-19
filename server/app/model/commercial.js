@@ -13,6 +13,10 @@ const _schema = mongoose.Schema({
   external_count: Number,
   machine_type: [String],
   ad_restriction: [String],
+  location: Object,
+  location_type: String,
+  formatted_address: String,
+  geoCoded: Boolean,
 });
 
 module.exports = mongoose.model('Commercial', _schema);
