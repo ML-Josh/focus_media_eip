@@ -16,7 +16,11 @@ const _schema = mongoose.Schema({
   location: Object,
   location_type: String,
   formatted_address: String,
-  geoCoded: Boolean,
+  geoCodeStatus: String,
+  geoCoded: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 module.exports = mongoose.model('Commercial', _schema);

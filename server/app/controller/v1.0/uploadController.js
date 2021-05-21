@@ -12,7 +12,7 @@ const uploadController = {
       const wb = xlsx.readFile(absolutePath);
       const ws = wb.Sheets.分眾樓宇;
 
-      const data = xlsx.utils.sheet_to_json(ws, { range: 4 });
+      const data = xlsx.utils.sheet_to_json(ws, { range: { s: { c: 0, r: 4 }, e: { c: 11, r: 1980 } } });
 
       const formattedData = data.map((d) => ({
         ...d,
@@ -49,7 +49,7 @@ const uploadController = {
       const wb = xlsx.readFile(absolutePath);
       const ws = wb.Sheets.社區EiP;
 
-      const data = xlsx.utils.sheet_to_json(ws, { range: 6 });
+      const data = xlsx.utils.sheet_to_json(ws, { range: { s: { c: 0, r: 6 }, e: { c: 19, r: 3585 } } });
 
       const formattedData = data.map((d) => ({
         ...d,
